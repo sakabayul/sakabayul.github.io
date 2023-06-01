@@ -47,7 +47,7 @@ nav {
 }
 .logo i {
     color: var(--warna-merah);
-    font-size: 28px;
+    font-size: 1.7rem;
     margin-right: 3px;
 }
 .logo span {
@@ -60,10 +60,9 @@ nav {
 }
 .navbar a {
     color: var(--warna-putih);
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 500;
-    padding: 5px 0;
-    margin: 0px 30px;
+    padding: 15px 20px;
     transition: all 0.5s ease;
 }
 .navbar a:hover {
@@ -84,10 +83,12 @@ button {
     padding: 7px 25px;
     border-radius: 30px;
     color: var(--warna-putih);
-    font-size: 15px;
+    font-size: 1rem;
     transition: 0.4s;
 }
 button:hover {
+    background: var(--warna-putih);
+    color: var(--warna-hitam);
     transform: scale(1.1);
     cursor: pointer;
 }
@@ -95,7 +96,7 @@ button:hover {
     color: var(--warna-merah);
 }
 #menu-icon {
-    font-size: 35px;
+    font-size: 3rem;
     color: var(--warna-putih);
     cursor: pointer;
     z-index: 10001;
@@ -107,7 +108,7 @@ button:hover {
 
 /* Start Header Gambar */
 .hero {
-    height: 100vh;
+    height: 975px;
     width: 100%;
     margin-bottom: 20px;
     background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(../images/background.webp);
@@ -120,14 +121,14 @@ button:hover {
 }
 .header-text {
     margin-top: 15%;
-    font-size: 30px;
+    font-size: 1.7rem;
     transition: all 0.5s ease;
 }
 .header-text p {
     color: var(--warna-merah);
 }
 .header-text h1 {
-    font-size: 60px;
+    font-size: 3rem;
     margin-top: 20px;
     transition: all 0.5s ease;
 }
@@ -144,7 +145,7 @@ section {
 }
 .heading{
     text-align: center;
-    font-size: 40px;
+    font-size: 2rem;
     color:var(--warna-putih);
     padding: 10px;
     margin-top: 20px;
@@ -162,13 +163,16 @@ section {
     border-radius: 5rem;
     background: var(--warna-merah);
     color:var(--warna-putih);
-    padding: 5px 25px;
+    padding: 5px 18px;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
 }
 .btn:hover{
+    transform: scale(1.1);
     background:var(--warna-hitam);
-    color: var(--warna-merah);
+    color: var(--warna-putih);
+    transition: all 0.3s ease;
 }
 /* End Button Edit Learn more */
 
@@ -186,19 +190,19 @@ section {
 .container .row .video-container video{
     width:100%;
     border:1.5rem solid #fff;
-    border-radius: .5rem;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.4);
+    border-radius: .5rem;
     height: 100%;
     object-fit: cover;
 }
 .container .row .video-container h3{
     position: absolute;
     top:50%; transform: translateY(-50%);
-    font-size: 34px;
+    font-size: 2.5rem;
     background:var(--warna-putih);
     color: var(--warna-hitam);
     width: 100%;
-    padding: 2px 2rem;
+    padding: 0px 2rem;
     text-align: center;
     mix-blend-mode: screen;
 }
@@ -206,11 +210,11 @@ section {
     flex:1 1 40rem;
 }
 .container .row .content h3{
-    font-size: 40px;
+    font-size: 2rem;
     color:var(--warna-merah);
 }
 .container .row .content p{
-    font-size: 18px;
+    font-size: 1rem;
     color:var(--warna-hitam);
     padding:.5rem 0;
     padding-top: 1rem;
@@ -239,6 +243,8 @@ section {
 }
 
 .container2 .image-skill img{
+    border:0.3rem solid #fff;
+    box-shadow: 0 0 1rem rgba(0,0,0,.5);
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -257,19 +263,22 @@ section {
 }
 
 .container2 .button a{
-    width: 40px;
-    height: 40px;
+    width: 3rem;
+    height: 3.5rem;
     text-align: center;
-    line-height: 40px;
+    line-height: 3.5rem;
     vertical-align: middle;
     align-items: center;
     cursor: pointer;
     color: white;
     background: rgba(0, 0, 0, 0.8);
-    font-size: 20px;
+    font-size: 3rem;
     user-select: none;
 }
-
+.container2 .button a:hover {
+    background: var(--warna-merah);
+    opacity: 0.8;
+}
 .container2 .button .prev{
     border-radius: 0 5px 5px 0;
 }
@@ -287,8 +296,8 @@ section {
 
 .dot{
     cursor: pointer;
-    height: 20px;
-    width: 20px;
+    height: 1.3rem;
+    width: 1.3rem;
     border-radius: 50%;
     background: #bbb;
     display: inline-block;
@@ -318,13 +327,15 @@ section {
 .products .box-container .box .image{
     position: relative;
     text-align: center;
-    padding-top: 2rem;
+    padding-top: 1rem;
     overflow:hidden;
 }
 .products .box-container .box .image img{
-    height:250px;
-    padding-left: 30px;
-    padding-right: 30px;
+    width: 32rem;
+    height: auto;
+    object-fit: cover;
+    padding-left: 1vh;
+    padding-right: 1vh;
     transition: all 0.5s ease;
 }
 .products .box-container .box:hover .image img{
@@ -342,7 +353,7 @@ section {
     height: 50px;
     line-height: 50px;
     font-size: 20px;
-    width:90%;
+    width:65%;
     background:var(--warna-hitam);
     color:var(--warna-putih);
 }
@@ -359,19 +370,19 @@ section {
     text-align: center;
 }
 .products .box-container .box .content h3{
-    font-size: 24px;
+    font-size: 1.5rem;
     color:var(--warna-hitam);
     font-weight: bolder;
 }
 .products .box-container .box .content .price{
-    font-size: 19px;
+    font-size: 1.1rem;
     color:#999;
     padding-top: 1px;
     padding-bottom: 10px;
     margin: 0 22px;
 }
 .products .box-container .box .content .price span{
-    font-size: 14px;
+    font-size: 0.9rem;
     color:var(--warna-merah);
     font-weight: lighter;
 }
@@ -423,7 +434,7 @@ footer {
 }
 .footer-distributed .footer-company-name {
     color: #8f9296;
-    font-size: 14px;
+    font-size: 0.9rem;
     font-weight: normal;
     margin: 0;
 }
@@ -435,7 +446,7 @@ footer {
 .footer-distributed .footer-center i {
     background-color: #33383b;
     color: var(--warna-putih);
-    font-size: 25px;
+    font-size: 1.8rem;
     width: 38px;
     height: 38px;
     border-radius: 50%;
@@ -445,7 +456,7 @@ footer {
     vertical-align: middle;
 }
 .footer-distributed .footer-center i.fa-envelope {
-    font-size: 17px;
+    font-size: 1.3rem;
     line-height: 38px;
 }
 .footer-distributed .footer-center p {
@@ -457,7 +468,7 @@ footer {
 .footer-distributed .footer-center p span {
     display: block;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 0.9rem;
     line-height: 2;
 }
 .footer-distributed .footer-center p a {
@@ -473,7 +484,7 @@ footer {
 .footer-distributed .footer-company-about {
     line-height: 20px;
     color: #92999f;
-    font-size: 13px;
+    font-size: 0.8rem;
     font-weight: normal;
     margin: 0;
     text-transform: none;
@@ -481,7 +492,7 @@ footer {
 .footer-distributed .footer-company-about span {
     display: block;
     color: var(--warna-putih);
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: bold;
     margin-bottom: 20px;
 }
@@ -495,7 +506,7 @@ footer {
     cursor: pointer;
     background-color: #33383b;
     border-radius: 2px;
-    font-size: 20px;
+    font-size: 1.3rem;
     color: #ffffff;
     text-align: center;
     line-height: 35px;
@@ -513,7 +524,10 @@ footer {
 
 
 /* Start Responsive Media */
-@media (max-width: 1200px){
+@media (max-width: 1000px){
+    html {
+        font-size: 80%;
+    }
     #menu-icon {
         display: block;
     }
@@ -523,11 +537,9 @@ footer {
     }
     .header-text {
         margin-top: 20%;
-        font-size: 23px;
         transition: all 0.5s ease;
     }
     .header-text h1 {
-        font-size: 45px;
         margin-top: 20px;
         transition: all 0.5s ease;
     }
@@ -535,8 +547,8 @@ footer {
         position: absolute;
         top: 100%;
         right: -100%;
-        width: 270px;
-        height: 29vh;
+        width: 16rem;
+        height: 20rem;
         background: var(--warna-merah);
         display: flex;
         flex-direction: column;
@@ -545,6 +557,7 @@ footer {
         transition: all 0.5s ease;
     }
     .navbar a {
+        font-size: 1.3rem;
         display: block;
         margin: 12px 0;
         padding: 0px 25px;
@@ -562,52 +575,51 @@ footer {
     }
 }
 @media (max-width: 600px) {
+    html {
+        font-size: 60%;
+    }
+    .navbar {
+        width: 16rem;
+        height: 24rem;
+    }
+    .navbar a {
+        font-size: 1.5rem;
+    }
     .header {
         padding: 345px 7%;
         transition: all 0.5s ease;
     }
     .header-text {
         margin-top: 20%;
-        font-size: 18px;
         transition: all 0.5s ease;
     }
     .header-text h1 {
-        font-size: 34px;
         margin-top: 20px;
         transition: all 0.5s ease;
     }
     .logo span {
-        font-size: 23px;
         transition: all 0.5s ease;
     }
     button {
         padding: 5px 18px;
-        font-size: 15px;
     }
     .hero {
         margin-bottom: 5px;
     }
     .heading{
-        font-size: 30px;
         padding: 7px;
         margin-top: 1px;
         margin-bottom: 25px;
     }
     .container .row .video-container h3{
-        font-size: 24px;
         padding: 0px 25px;
     }
-    .container .row .content h3{
-        font-size: 28px;
-    }
     .container .row .content p{
-        font-size: 14px;
         padding:.5rem 0;
         padding-top: 1px;
     }
     .btn {
         padding: 5px 18px;
-        font-size: 15px;
     }
     .products .box-container .box .image img{
         height: 180px;
@@ -616,17 +628,9 @@ footer {
     .products .box-container .box .image .icons a{
         height: 40px;
         line-height: 40px;
-        font-size: 18px;
-    }
-    .products .box-container .box .content h3{
-        font-size: 20px;
     }
     .products .box-container .box .content .price{
-        font-size: 15px;
         padding-top: 1px;
-    }
-    .products .box-container .box .content .price span{
-        font-size: 10px;
     }
 }
 
