@@ -201,6 +201,7 @@ header .navbar a.active {
     font-size: 3rem;
     color: var(--warna-tulisan-1);
     margin-bottom: 2rem;
+    text-transform: none;
 }
 .home .content h1 span{
     font-size: 3rem;
