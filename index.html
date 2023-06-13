@@ -240,8 +240,24 @@
                     </div>
                 </div>
                 <div class="content">
-                    <h1>Nice.Gelato E-Commerce Website</h1>
+                    <h1>Nice Gelato E-Commerce Website</h1>
                     <div class="disclaimer"> Dibuat pada tanggal 09 Maret 2023. <br>
+                        <span>Disclaimer: practice projects portfolio</span>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/nice-movie-1.png" alt="">
+                    <div class="icons">
+                        <span class="fa-solid fa-maximize" onclick="openPopup('images/nice-movie-1.png')"></span>
+                        <a href="portfolio/nice-movie-website.html" class="cart-btn">Open Project</a>
+                        <span class="fas fa-share" onclick="toggleShareModal()"></span>
+                    </div>
+                </div>
+                <div class="content">
+                    <h1>Nice Movie Catalog Website</h1>
+                    <div class="disclaimer"> Dibuat pada tanggal 13 Juni 2023. <br>
                         <span>Disclaimer: practice projects portfolio</span>
                     </div>
                 </div>
@@ -256,13 +272,14 @@
                     </div>
                 </div>
                 <div class="content">
-                    <h1>Moodify Catalog Website</h1>
+                    <h1>Moodiify Catalog Website</h1>
                     <div class="disclaimer"> Dibuat pada tanggal 10 Juni 2023. <br>
                         <span>Disclaimer: professional website portfolio</span>
                     </div>
                 </div>
             </div>
         </div>
+
 
         <!-- Popup Share -->
         <div id="shareModal" class="modal">
@@ -293,6 +310,7 @@
     <form class="contact-container" name="my-contact-portfolio">
         <h2 class="contact-heading" id="contact">Contact Us</h2>
         <div class="contact-form">
+            <input type="text" name="website" value="Website My Portfolio" class="button-none" readonly>
             <input type="text" name="nama" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
             <textarea name="pesan" placeholder="Your Message" required></textarea>
@@ -351,7 +369,7 @@
     <script type="text/javascript" src="js/script.js"></script>
     <script src="js/script-images-slides.js"></script>
 
-    <!-- Script tombol kirim form -->
+    <!-- Script tombol kirim form untuk my contact -->
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbwoKpeRYLbIVkUS8c5RXFjXoyCZxM5sLc9BrLm1L4rteTEsKhJWGzXTJSHNtqhyOWlQ1A/exec'
         const form = document.forms['my-contact-portfolio'];

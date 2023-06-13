@@ -485,6 +485,10 @@ section {
     font-size: 1.3rem;
     margin: 1rem 0;
 }
+.service-left-container img{
+    width: 100%;
+    margin: 1rem 0;
+}
 .service-left-container p{
     line-height: 2;
     font-size: .9rem;
