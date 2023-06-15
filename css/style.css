@@ -228,7 +228,7 @@ header .navbar a.active {
 
 
 
-/* Strat Container About*/
+/* Pengaturan Section Start */
 section {
     padding: 2rem 10%;
 }
@@ -245,6 +245,11 @@ section {
 .heading span{
     color:var(--warna-tulisan-3);
 }
+/* Pengaturan Section Start */
+
+
+
+/* Strat Container About*/
 .about .row{
     display: flex;
     align-items: center;
@@ -281,7 +286,7 @@ section {
 .about .row .content h3{
     font-size: 1.5rem;
     margin-bottom: .7rem;
-    color:var(--warna-section-1);
+    color:var(--warna-tulisan-3);
 }
 .about .row .content p{
     text-align: justify;
@@ -310,7 +315,6 @@ section {
     color: var(--warna-button-3);
     transition: background-color .3s ease-out;
 }
-/* End Button Edit Learn more */
 /* End Container About */
 
 
@@ -666,12 +670,14 @@ section {
     font-weight: bolder;
 }
 .portfolio .box-container .box .content .disclaimer{
+    text-transform: none;
     font-size: 1.1rem;
     color:#999;
     padding: .8rem;
 
 }
 .portfolio .box-container .box .content .disclaimer span{
+    text-transform: none;
     font-size: 0.9rem;
     color:var(--warna-tulisan-3);
     font-weight: lighter;
