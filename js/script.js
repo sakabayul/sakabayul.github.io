@@ -128,3 +128,23 @@ document.addEventListener('click', function (event) {
         event.target.parentNode.style.display = 'none';
     }
 });
+
+
+// JavaScript untuk mengelola pemuatan konten
+window.addEventListener('load', function () {
+
+    document.getElementById('loading-screen').style.display = 'none';
+
+    document.getElementById('main-content').style.display = 'block';
+});
+
+// document.addEventListener('DOMContentLoaded', function () {
+//     // Simulasikan waktu pemuatan
+//     setTimeout(function () {
+//       // Sembunyikan halaman pemuatan
+//       document.getElementById('loading-screen').style.display = 'none';
+//       // Tampilkan konten utama
+//       document.getElementById('main-content').style.display = 'block';
+//     }, 5000); // Contoh waktu pemuatan 3 detik
+//   });
+  
