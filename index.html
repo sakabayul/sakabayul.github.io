@@ -3,401 +3,453 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saka Bayu Laksono</title>
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <title>Saka Bayu</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <!-- Halaman Pemuatan -->
-<div id="loading-screen">
-    <div class="wrapper">
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="shadow"></div>
-        <div class="shadow"></div>
-        <div class="shadow"></div>
+    <div id="loading-screen">
+        <div class="wrapper">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="shadow"></div>
+            <div class="shadow"></div>
+            <div class="shadow"></div>
+        </div>
     </div>
-</div>
 
 
-<div id="main-content" style="display: none;">
-    <!-- Start Header -->
-    <header class="hidden-navbar">
-        <a href="#" class="logo"><i class="fa-solid fa-user"></i><span> Saka Bayu</span></a>
-        <nav class="navbar">
-            <a href="#home" class="menu-item">home</a>
-            <a href="#about" class="menu-item">about</a>
-            <a href="#skills" class="menu-item">skils</a>
-            <a href="#service" class="menu-item">service</a>
-            <a href="#portfolio" class="menu-item">portfolio</a>
+    <div class="main-content">
+        <!-- Navbar -->
+        <nav>
+            <div class="kontener">
+                <div class="logo">
+                    <h2>Saka <span>Bayu</span></h2>
+                </div>
+                <ul class="hidden">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skill">Skills</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                </ul>
+                <a href="#contact" class="button">Contact me</a>
+            </div>
         </nav>
-        <div class="main">
-            <div class="saklar">
-                <a id="theme-toggle" class="theme-toggle">
-                    <i id="theme-icon" class="fas fa-sun"></i> <!-- Ikon untuk tema light -->
-                </a>
+
+
+        <!-- Header -->
+        <header id="home">
+            <div class="kontener header">
+                <div class="hero">
+                    <img src="./image/1.png" alt="">
+                </div>
+                <div class="introduce">
+                    <p>Hi, i am <span>Saka Bayu Laksono</span></p>
+                    <h2>I am <span>Web Developer & Programmer</span></h2>
+                    <p class="mb-5">I work on full time and freelance</p>
+                    <a href="#portfolio" class="button">My Portfolio</a>
+                </div>
             </div>
-            <a href="#contact" class="button1">Contact</a>
-            <div id="menu-icon"><i class="fa-solid fa-bars"></i></div>
+        </header>
+
+
+        <!-- Container Main -->
+        <main>
+            <!-- Container Section -->
+            <div class="kontener">
+                <!-- Container Section main -->
+                <div class="kontener-main">
+                    <!-- Section About me -->
+                    <section id="about">
+                        <h2>About me</h2>
+                        <p>I have expertise in web development and programming. I've been making a lot of websites,
+                            including web e-commerce, landing pages, business web, and more. I'm used to using the
+                            <strong>Angular</strong>
+                            framework when building a website project, but I've also become familiar with other
+                            frameworks
+                            like <strong>React.js</strong>, <strong>Next.js</strong>, and <strong>Laravel</strong>.
+                        </p>
+                        <h4>Education</h4>
+                        <p><strong>Pamulang University, Computer Engineering</strong>
+                            <br>Graduate in December 2023
+                            <br>GPA: 3.30
+                        </p>
+                    </section>
+
+                    <!-- Section My skills -->
+                    <section class="skill" id="skill">
+                        <h2>My Skills</h2>
+                        <swiper-container class="mySwiper" pagination="true" effect="coverflow" grab-cursor="true"
+                            centered-slides="true" slides-per-view="auto" coverflow-effect-rotate="50"
+                            coverflow-effect-stretch="0" coverflow-effect-depth="100" coverflow-effect-modifier="1"
+                            coverflow-effect-slide-shadows="true">
+                            <swiper-slide><i class="fa-brands fa-html5"></i></swiper-slide>
+                            <swiper-slide><i class="fa-brands fa-css3-alt"></i></swiper-slide>
+                            <swiper-slide><i class="fa-brands fa-js"></i></swiper-slide>
+                            <swiper-slide><i class="fa-brands fa-react"></i></swiper-slide>
+                            <swiper-slide><i class="fa-brands fa-angular"></i></swiper-slide>
+                            <swiper-slide><i class="fa-brands fa-php"></i></swiper-slide>
+                            <swiper-slide><i class="fa-brands fa-laravel"></i></swiper-slide>
+                            <swiper-slide><i class="fa-brands fa-node"></i></swiper-slide>
+                            <swiper-slide><i class="fa-brands fa-bootstrap"></i></swiper-slide>
+                        </swiper-container>
+                    </section>
+
+                    <!-- Section Gallery UI/UX -->
+                    <section id="gallery">
+                        <h2>Gallery UI/UX</h2>
+                        <article>
+                            <div class="gallery">
+                                <img src="./image/Angular/Project-1/Desktop 1.png" alt="">
+                                <img src="./image/Angular/Project-2/Desktop 1.png" alt="">
+                            </div>
+                        </article>
+                    </section>
+
+                    <!-- Section My portfolio -->
+                    <section id="portfolio">
+                        <h2>My Portfolio</h2>
+                        <!-- Container List Framework -->
+                        <div class="col-4 my-4">
+                            <div class="list-group list-group-horizontal" id="list-tab" role="tablist">
+                                <a class="list-group-item list-group-item-action active" id="list-laravel-list"
+                                    data-bs-toggle="list" href="#list-laravel" role="tab"
+                                    aria-controls="list-laravel">Laravel Project</a>
+                                <!-- <a class="list-group-item list-group-item-action" id="list-react-list" data-bs-toggle="list"
+                                href="#list-react" role="tab" aria-controls="list-react">Express.js</a>
+                            <a class="list-group-item list-group-item-action" id="list-next-list" data-bs-toggle="list"
+                                href="#list-next" role="tab" aria-controls="list-next">Next.js</a> -->
+                                <a class="list-group-item list-group-item-action" id="list-angular-list"
+                                    data-bs-toggle="list" href="#list-angular" role="tab"
+                                    aria-controls="list-angular">Angular Project</a>
+                            </div>
+                        </div>
+                        <div class="tab-content" id="nav-tabContent">
+                            <!-- Project Laravel -->
+                            <div class="tab-pane fade show active" id="list-laravel" role="tabpanel"
+                                aria-labelledby="list-laravel-list">
+                                <!-- Main Container -->
+                                <!-- Container Cards -->
+                                <div class="container-cards">
+                                    <!-- Main Card Start -->
+                                    <!-- Project 1 Laravel -->
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="./image/Laravel/Project-1/Desktop 1.png" class="card-img-top"
+                                            alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Website Portfolio</h5>
+                                            <p class="card-text">
+                                                Languages: HTML | CSS | JavaScript
+                                                <br>
+                                                Framework: Laravel
+                                                <br>
+                                                Library: Bootstrap | Filament
+                                                <br>
+                                                Type: Portfolio
+                                                <br>
+                                                Database: phpMyAdmin (MySQL)
+                                            </p>
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                                data-bs-target="#project-1-laravel">View Detail</button>
+                                        </div>
+                                    </div>
+                                    <!-- Main Card End -->
+                                </div>
+
+                            </div>
+
+                            <!-- Project Express.js -->
+                            <div class="tab-pane fade" id="list-react" role="tabpanel"
+                                aria-labelledby="list-react-list">
+                                <!-- Main Container -->
+
+                                <!-- Container Cards -->
+                                <div class="container-cards">
+                                    <!-- Main Card Start -->
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="..." class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and
+                                                make up the bulk of the card's content.</p>
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal">View Detail</button>
+                                        </div>
+                                    </div>
+                                    <!-- Main Card End -->
+                                </div>
+
+                            </div>
+
+                            <!-- Project Next.js -->
+                            <div class="tab-pane fade" id="list-next" role="tabpanel" aria-labelledby="list-next-list">
+                                <!-- Main Container -->
+
+                                <!-- Container Cards -->
+                                <div class="container-cards">
+                                    <!-- Main Card Start -->
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="..." class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and
+                                                make up the bulk of the card's content.</p>
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal">View Detail</button>
+                                        </div>
+                                    </div>
+                                    <!-- Main Card End -->
+                                </div>
+
+                            </div>
+
+                            <!-- Project Angular -->
+                            <div class="tab-pane fade" id="list-angular" role="tabpanel"
+                                aria-labelledby="list-angular-list">
+                                <!-- Main Container -->
+                                <!-- Container Cards -->
+                                <div class="container-cards">
+                                    <!-- Main Card Start -->
+                                    <!-- Project 1 Angular -->
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="./image/Angular/Project-1/Desktop 1.png" class="card-img-top"
+                                            alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Website E-commerce Technology</h5>
+                                            <p class="card-text">
+                                                Languages: HTML | CSS | Typescript
+                                                <br>
+                                                Framework: Angular
+                                                <br>
+                                                Library: Bootstrap | FontAwesome
+                                                <br>
+                                                Type: E-commerce
+                                                <br>
+                                                Product: Technology
+                                            </p>
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                                data-bs-target="#project-1-angular">Views Detail</button>
+                                        </div>
+                                    </div>
+
+                                    <!-- Project 2 Angular -->
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="./image/Angular/Project-2/Desktop 1.png" class="card-img-top"
+                                            alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Website E-commerce Food</h5>
+                                            <p class="card-text">
+                                                Languages: HTML | CSS | Typescript
+                                                <br>
+                                                Framework: Angular
+                                                <br>
+                                                Library: FontAwesome | Google Fonts
+                                                <br>
+                                                Type: E-commerce
+                                                <br>
+                                                Product: Food Ice Cream
+                                            </p>
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                                data-bs-target="#project-2-angular">Views Detail</button>
+                                        </div>
+                                    </div>
+                                    <!-- Main Card End -->
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+
+
+        <!-- Container Footer -->
+        <footer>
+            <div class="contact" id="contact">
+                <div class="icon-contact">
+                    <h2>My Contact</h2>
+                    <p>South Jakarta, DKI Jakarta, Indonesia</p>
+                    <a href="https://www.linkedin.com/in/saka-bayu-l/"><i class="fa-brands fa-linkedin"></i>
+                        Linkedin</a>
+                    <a href="https://www.instagram.com/sakabayu0/"><i class="fa-brands fa-square-instagram"></i>
+                        Instagram</a>
+                    <a href="https://github.com/sakabayul"><i class="fa-brands fa-github"></i> GitHub</a>
+                    <a style="color: var(--font-color-1);"><i class="fa-regular fa-envelope"></i>
+                        sakapkl015@gmail.com</a>
+                    <a style="color: var(--font-color-1);"><i class="fa-brands fa-whatsapp"></i> 083140949703</a>
+                </div>
+                <div class="image-contact">
+                    <img src="./image/2.png" alt="">
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © 2024. Design By |<span> Saka Bayu</span></p>
+            </div>
+        </footer>
+
+
+
+        <!-- Modal Portfolio Angular-->
+        <!-- Project 1 Angular -->
+        <div class="modal fade" id="project-1-laravel" tabindex="-1" aria-labelledby="project-1-laravelLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="project-1-laravelLabel">Website Portfolio Use Freamwork
+                            Laravel
+                        </h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body container-modal">
+                        <div class="desktop mb-4">
+                            <h2 class="mt-5">Responsive Desktop</h2>
+                            <img class="img-desktop" src="./image/Laravel/Project-1/Desktop 1.png" alt="">
+                            <img class="img-desktop" src="./image/Laravel/Project-1/Desktop 2.png" alt="">
+                            <img class="img-desktop" src="./image/Laravel/Project-1/Desktop 3.png" alt="">
+                            <img class="img-desktop" src="./image/Laravel/Project-1/Desktop 4.png" alt="">
+                            <img class="img-desktop" src="./image/Laravel/Project-1/Desktop 5-1.png" alt="">
+                            <img class="img-desktop" src="./image/Laravel/Project-1/Desktop 6.png" alt="">
+                            <img class="img-desktop" src="./image/Laravel/Project-1/Desktop 7.png" alt="">
+                            <img class="img-desktop" src="./image/Laravel/Project-1/Desktop 7-1.png" alt="">
+                        </div>
+                        <div class="ipad mb-4">
+                            <h2 class="mt-5">Responsive Tablet</h2>
+                            <img class="img-ipad" src="./image/Laravel/Project-1/Tablet 1.png" alt="">
+                            <img class="img-ipad" src="./image/Laravel/Project-1/Tablet 2.png" alt="">
+                        </div>
+                        <div class="smartphone mb-4">
+                            <h2 class="mt-5">Responsive Smartphone</h2>
+                            <img class="img-smartphone" src="./image/Laravel/Project-1/Smartphone 1.png" alt="">
+                            <img class="img-smartphone" src="./image/Laravel/Project-1/Smartphone 2.png" alt="">
+                            <img class="img-smartphone" src="./image/Laravel/Project-1/Smartphone 3.png" alt="">
+                            <img class="img-smartphone" src="./image/Laravel/Project-1/Smartphone 4.png" alt="">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <a href="https://github.com/sakabayul/portfolio-sederhana-laravel" type="button"
+                            class="btn btn-primary" target="_blank">View Project</a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </header>
-    <!-- End Header -->
 
 
 
-    <!-- Start Home -->
-    <section class="home" id="home">
-        <div class="content">
-            <span>Website Developer</span>
-            <h1>Hi, I'm <span>Saka Bayu</span><br>
-                From Indonesia <br>
-                Live in Jakarta</h1>
-            <a href="#portfolio" class="button2">My Portfolio</a>
-        </div>
-    </section>
-    <!-- End Home -->
-
-
-
-    <!-- Container About Start -->
-    <section class="about">
-        <h1 class="heading" id="about"><span>About</span> US</h1>
-        <div class="row">
-            <div class="img-container">
-                <img src="images/foto-about.png" loop autoplay muted></img>
-                <h3>Saka Bayu Laksono</h3>
-            </div>
-            <div class="content">
-                <h3>Status</h3>
-                <p>Saya pernah bersekolah di SMK mengambil jurusan Multimedia selama bersekolah saya belajar Arsitektur
-                    Informasi, dan karena itu saya memiliki pemahaman yang tajam tentang gambar rangka, peta situs, dan
-                    desain. Setelah lulus SMK pada tahun 2019 saya melanjutkan studi untuk masuk sebuah Universitas dan
-                    mengambil jurusan Teknik Informasi, di sana saya belajar tentang banyak pemrograman salah satunya
-                    adalah tentang Website Developer.</p>
-                <p>Saya memilih untuk mempelajari Website Desainer karena saya berpengalaman dibidang Multimedia saat
-                    bersekolah, yang dimana saya mengerti tentang Arsitektur Informasi, yang saya manfaatkan dengan baik
-                    pada setiap proyek yang saya kerjakan. Selama berkuliah saya mendalami sebuah bidang Web Developer
-                    dan Desain Multimedia, saya menghabiskan banyak waktu untuk belaja (PHP, HTML, CSS, JS, jQuery,
-                    Bootstrap, Responsive Layout, Adobe Illustrator, Adobe Photoshop).</P>
-                <p>Selama saya berkuliah, saya telah mengerjakan banyak project yang berkaitan dengan Web Developer
-                    seperti membuat Design Website E-Commerce, Website Portfolio, Website Pendidikan, Website Portfolio,
-                    dan lain-lain. Project tersebut dikerjakan dengan Team Work atau Individual, menggunakan software
-                    (VS Code) dengan pengembangan (PHP, HTML, CSS, JS, jQuery, Bootstrap, dan Website
-                    Responsif).</p>
-                <a href="#" class="btn" id="disable" onclick="return disable()"><i class="fa-solid fa-download"></i>
-                    Curriculum Vitae</a>
-            </div>
-        </div>
-    </section>
-    <!-- Container About End -->
-
-
-
-    <!-- Container Skils Start -->
-    <section class="Skills">
-        <h1 class="heading" id="skills">My <span>Skills</span></h1>
-        <div class="slideshow-container">
-            <div class="slide">
-                <span class="slide-number">1</span>
-                <img src="images/skils/front-end-developer.png" alt="Slide 1">
-            </div>
-            <div class="slide">
-                <span class="slide-number">2</span>
-                <img src="images/skils/back-end-developer.png" alt="Slide 2">
-            </div>
-            <div class="slide">
-                <span class="slide-number">3</span>
-                <img src="images/skils/desain-grafis.png" alt="Slide 3">
-            </div>
-            <div class="slide">
-                <span class="slide-number">4</span>
-                <img src="images/skils/img-html.png" alt="Slide 4">
-            </div>
-            <div class="slide">
-                <span class="slide-number">5</span>
-                <img src="images/skils/img-css.png" alt="Slide 5">
-            </div>
-            <div class="slide">
-                <span class="slide-number">6</span>
-                <img src="images/skils/img-js.png" alt="Slide 6">
-            </div>
-            <div class="slide">
-                <span class="slide-number">7</span>
-                <img src="images/skils/img-php.png" alt="Slide 7">
-            </div>
-            <div class="slide">
-                <span class="slide-number">8</span>
-                <img src="images/skils/img-cms.png" alt="Slide 8">
-            </div>
-            <button class="prev-button"><</button>
-            <button class="next-button">></button>
-        </div>
-    </section>
-    <!-- Container Skils End -->
-
-
-
-    <!-- Container Service Start -->
-    <section class="service">
-        <h1 class="heading" id="service">Service</h1>
-        <div class="box-container">
-            <div class="box">
-                <div class="image">
-                    <img src="images/service/website-design.png" alt="">
-                    <div class="icons">
-                        <a href="service/website-design.html" class="cart-btn">Learn more</a>
+        <!-- Modal Portfolio Angular-->
+        <!-- Project 1 Angular -->
+        <div class="modal fade" id="project-1-angular" tabindex="-1" aria-labelledby="project-1-angularLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="project-1-angularLabel">Website E-Commerce Teknologi Use
+                            Freamwork
+                            Angular
+                        </h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                </div>
-                <div class="content">
-                    <h3>Website Design</h3>
-                    <div class="paragraf"> Pendekatan saya dalam desain website adalah menciptakan sebuah situs web yang
-                        memperkuat merek perusahaan anda, sambil memastikan kemudahan penggunaan dan kesederhanaan bagi
-                        audiens anda.</div>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="image">
-                    <img src="images/service/website-development.png" alt="">
-                    <div class="icons">
-                        <a href="service/website-development.html" class="cart-btn">Learn more</a>
+                    <div class="modal-body container-modal">
+                        <div class="desktop mb-4">
+                            <h2 class="mt-5">Responsive Desktop</h2>
+                            <img class="img-desktop" src="./image/Angular/Project-1/Desktop 1.png" alt="">
+                            <img class="img-desktop" src="./image/Angular/Project-1/Desktop 2.png" alt="">
+                        </div>
+                        <div class="ipad mb-4">
+                            <h2 class="mt-5">Responsive Tablet</h2>
+                            <img class="img-ipad" src="./image/Angular/Project-1/IPad Pro 1.png" alt="">
+                            <img class="img-ipad" src="./image/Angular/Project-1/IPad Pro 2.png" alt="">
+                        </div>
+                        <div class="smartphone mb-4">
+                            <h2 class="mt-5">Responsive Smartphone</h2>
+                            <img class="img-smartphone" src="./image/Angular/Project-1/Samsung Galaxy S20 Ultra 1.png"
+                                alt="">
+                            <img class="img-smartphone" src="./image/Angular/Project-1/Samsung Galaxy S20 Ultra 2.png"
+                                alt="">
+                        </div>
                     </div>
-                </div>
-                <div class="content">
-                    <h3>Website Development</h3>
-                    <div class="paragraf">Proses pengembangan web melibatkan pengambilan elemen-elemen grafis yang
-                        ditentukan dalam proses desain dan mengkode-kannya menjadi tema Wordpress kustom.</div>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="image">
-                    <img src="images/service/responsive-website-design.png" alt="">
-                    <div class="icons">
-                        <a href="service/responsive-website.html" class="cart-btn">Learn more</a>
-                    </div>
-                </div>
-                <div class="content">
-                    <h3>Responsive Website Design</h3>
-                    <div class="paragraf">Memiliki tata letak responsif berarti situs web anda secara fleksibel
-                        menyesuaikan ukuran tampilan yang optimal terlepas dari ukuran layar atau perangkat (misalnya
-                        iPhone, iPad, dll).</div>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="image">
-                    <img src="images/service/social-media.png" alt="">
-                    <div class="icons">
-                        <a href="service/socialmedia-integration.html" class="cart-btn">Learn more</a>
-                    </div>
-                </div>
-                <div class="content">
-                    <h3>Social Media Integration</h3>
-                    <div class="paragraf">Integrasi media sosial memungkinkan situs web anda untuk mengirim pembaruan ke
-                        Facebook, menampilkan umpan Twitter, dan menghubungkan ke akun media sosial anda.</div>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="image">
-                    <img src="images/service/wordpress-theme-development.png" alt="">
-                    <div class="icons">
-                        <a href="service/cwt-development.html" class="cart-btn">Learn more</a>
-                    </div>
-                </div>
-                <div class="content">
-                    <h3>Custom WordPress<br>Theme Development</h3>
-                    <div class="paragraf">Wordpress CMS adalah area administratif yang ramah pengguna yang memungkinkan
-                        anda dengan mudah mengedit konten situs web anda.
-                    </div>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="image">
-                    <img src="images/service/repair-maintenance.png" alt="">
-                    <div class="icons">
-                        <a href="service/repair-maintenance.html" class="cart-btn">Learn more</a>
-                    </div>
-                </div>
-                <div class="content">
-                    <h3>Website maintenance & repair</h3>
-                    <div class="paragraf">Melibatkan pemantauan, pembaruan, dan perbaikan rutin agar website tetap
-                        berjalan dengan baik dan memenuhi kebutuhan pengguna.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Container Service End -->
-
-
-
-    <!-- Container Portfolio Start -->
-    <section class="portfolio">
-        <h1 class="heading" id="portfolio">Portfolio</h1>
-        <div class="box-container">
-            <div class="box">
-                <div class="image">
-                    <img src="images/portfolio/nicegelato-project-1.png" alt="">
-                    <div class="icons">
-                        <span class="fa-solid fa-maximize"
-                            onclick="openPopup('images/portfolio/nicegelato-project-1.png')"></span>
-                        <a href="portfolio/nicegelato-ecommerce-website.html" class="cart-btn">Open Project</a>
-                        <span class="fas fa-share" onclick="toggleShareModal()"></span>
-                    </div>
-                </div>
-                <div class="content">
-                    <h1>Nice Gelato E-Commerce Website</h1>
-                    <div class="disclaimer"> Dibuat pada tanggal 09 Maret 2023. <br>
-                        <span>Disclaimer: Portfolio of Practice Projects</span>
-                    </div>
-                </div>
-            </div>
-            <div class="box">
-                <div class="image">
-                    <img src="images/portfolio/nice-movie-1.png" alt="">
-                    <div class="icons">
-                        <span class="fa-solid fa-maximize"
-                            onclick="openPopup('images/portfolio/nice-movie-1.png')"></span>
-                        <a href="portfolio/nice-movie-website.html" class="cart-btn">Open Project</a>
-                        <span class="fas fa-share" onclick="toggleShareModal()"></span>
-                    </div>
-                </div>
-                <div class="content">
-                    <h1>Nice Movie Catalog Website</h1>
-                    <div class="disclaimer"> Dibuat pada tanggal 13 Juni 2023. <br>
-                        <span>Disclaimer: Portfolio of Practice Projects</span>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <a href="https://github.com/sakabayul/ecommerce-teknologi-angular" type="button"
+                            class="btn btn-primary" target="_blank">View Project</a>
                     </div>
                 </div>
             </div>
         </div>
 
-
-        <!-- Popup Share -->
-        <div id="shareModal" class="modal">
-            <div class="modal-content">
-                <span class="close" onclick="toggleShareModal()">&times;</span>
-                <h2>Share on Social Media: </h2>
-                <div class="social-icons">
-                    <a class="social-icon"><i class="fab fa-facebook"></i> Facebook</a>
-                    <a class="social-icon"><i class="fab fa-twitter"></i> Twitter</a>
-                    <a class="social-icon"><i class="fab fa-instagram"></i> Instagram</a>
+        <!-- Project 2 Angular -->
+        <div class="modal fade" id="project-2-angular" tabindex="-1" aria-labelledby="project-2-angularLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="project-2-angularLabel">Website E-Commerce Food Use Freamwork
+                            Angular
+                        </h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body container-modal">
+                        <div class="desktop mb-4">
+                            <h2 class="mt-5">Responsive Desktop</h2>
+                            <img class="img-desktop" src="./image/Angular/Project-2/Desktop 1.png" alt="">
+                            <img class="img-desktop" src="./image/Angular/Project-2/Desktop 2.png" alt="">
+                            <img class="img-desktop" src="./image/Angular/Project-2/Desktop 3.png" alt="">
+                            <img class="img-desktop" src="./image/Angular/Project-2/Desktop 4.png" alt="">
+                            <img class="img-desktop" src="./image/Angular/Project-2/Desktop 5.png" alt="">
+                        </div>
+                        <div class="ipad mb-4">
+                            <h2 class="mt-5">Responsive Tablet</h2>
+                            <img class="img-ipad" src="./image/Angular/Project-2/Tablet 1.png" alt="">
+                            <img class="img-ipad" src="./image/Angular/Project-2/Tablet 2.png" alt="">
+                            <img class="img-ipad" src="./image/Angular/Project-2/Tablet 3.png" alt="">
+                            <img class="img-ipad" src="./image/Angular/Project-2/Tablet 4.png" alt="">
+                            <img class="img-ipad" src="./image/Angular/Project-2/Tablet 5.png" alt="">
+                        </div>
+                        <div class="smartphone mb-4">
+                            <h2 class="mt-5">Responsive Smartphone</h2>
+                            <img class="img-smartphone" src="./image/Angular/Project-2/Smartphone 1.png" alt="">
+                            <img class="img-smartphone" src="./image/Angular/Project-2/Smartphone 2.png" alt="">
+                            <img class="img-smartphone" src="./image/Angular/Project-2/Smartphone 3.png" alt="">
+                            <img class="img-smartphone" src="./image/Angular/Project-2/Smartphone 4.png" alt="">
+                            <img class="img-smartphone" src="./image/Angular/Project-2/Smartphone 5.png" alt="">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <a href="https://github.com/sakabayul/ecommerce-food-angular" type="button"
+                            class="btn btn-primary" target="_blank">View Project</a>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <!-- Popup Gambar -->
-        <div id="imagePopup" class="popup">
-            <div class="popup-content">
-                <span class="close1" onclick="closePopup()">&times;</span>
-                <img id="popupImage" src="" alt="">
-            </div>
-        </div>
-    </section>
-    <!-- Container Portfolio End -->
+    </div>
 
 
 
-    <!-- Container Contact Us Start -->
-    <form class="contact-container" name="my-contact-portfolio">
-        <h2 class="contact-heading" id="contact">Contact Us</h2>
-        <div class="contact-form">
-            <input type="text" name="website" value="Website My Portfolio" class="button-none" readonly>
-            <input type="text" name="nama" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="pesan" placeholder="Your Message" required></textarea>
-            <button class="btn-kirim" type="submit">Send Message</button>
-            <button class="loading-button btn-kirim button-none" type="button" disabled>
-                <span class="spinner"></span>
-                Send Message
-            </button>
-            <div class="alert success button-none">
-                <strong>Pesan berhasil dikirim!</strong> Pesan anda telah kami terima.
-                <button type="button" class="close-btn">&times;</button>
-            </div>
-        </div>
-    </form>
-    <!-- Container Contact Us End -->
+    <!-- Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/ffa3ed8b39.js" crossorigin="anonymous"></script>
 
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Start Footer Bar -->
-    <footer class="footer-distributed">
-        <div class="footer-center">
-            <div class="social-icons">
-                <p>follow us: </p>
-                <a class="icon-link">
-                    <i class="fab fa-facebook"></i>
-                </a>
-                <a class="icon-link">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a class="icon-link">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/saka-bayu-l/" class="icon-link" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-            </div>
-            <p class="footer-links">
-                <a href="#home">Home</a>
-                |
-                <a href="#about">About</a>
-                |
-                <a href="#skills">Skills</a>
-                |
-                <a href="#service">Service</a>
-                |
-                <a href="#portfolio">Portfolio</a>
-            </p>
-            <p class="footer-company-name">Copyright © 2023. Design by <strong>| Saka Bayu</strong></p>
-        </div>
-    </footer>
-    <!-- End Footer Bar -->
-</div>
-
-
-
-    <!-- JS Link -->
-    <script type="text/javascript" src="js/script.js"></script>
-    <script src="js/script-images-slides.js"></script>
-
-    <!-- Script tombol kirim form untuk my contact -->
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbwoKpeRYLbIVkUS8c5RXFjXoyCZxM5sLc9BrLm1L4rteTEsKhJWGzXTJSHNtqhyOWlQ1A/exec'
-        const form = document.forms['my-contact-portfolio'];
-        const btnKirim = document.querySelector('.btn-kirim');
-        const btnLoading = document.querySelector('.loading-button');
-        const Alert = document.querySelector('.alert');
-
-        form.addEventListener('submit', e => {
-            e.preventDefault()
-            // ketika tombol diketik maka, tombol akan hilang digantikan tombol yang baru
-            btnKirim.classList.toggle('button-none');
-            btnLoading.classList.toggle('button-none');
-            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(response => {
-                    // ketika tombol diketik maka, tombol akan hilang digantikan tombol yang baru
-                    btnKirim.classList.toggle('button-none');
-                    btnLoading.classList.toggle('button-none');
-
-                    //tanda kalau sudah terkirim
-                    Alert.classList.toggle('button-none');
-
-                    //reset form
-                    form.reset();
-                    console.log('Success!', response)
-                })
-                .catch(error => console.error('Error!', error.message))
-        })
-    </script>
+    <!-- Script JavaScript -->
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
