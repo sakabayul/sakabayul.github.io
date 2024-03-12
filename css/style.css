@@ -239,15 +239,35 @@ swiper-slide i {
 article .gallery {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 10px;
 }
-
-article .gallery img {
+article .gallery .card-gallery{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+article .gallery .card-gallery img {
     flex: 0 1 auto;
     width: 350px;
     border-radius: 10px;
     border: 2px solid white;
+    transition: ease-out .3s;
 }
+article .gallery .card-gallery .card-link{
+    display: none;
+    gap: 10px;
+    top: 79%;
+    right: 3%;
+    position: absolute;
+}
+article .gallery .card-gallery:hover img{
+    filter: blur(3px);
+}
+article .gallery .card-gallery:hover .card-link{
+    display: inherit;
+}
+
 
 
 
