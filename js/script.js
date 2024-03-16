@@ -1,7 +1,8 @@
+var loadingScreen = document.getElementById("loading-screen");
+var mainContent = document.getElementById("main-content");
+
 // JavaScript untuk mengelola pemuatan konten
 window.addEventListener('load', function () {
-
-    document.getElementById('loading-screen').style.display = 'none';
-
-    document.getElementById('main-content').style.display = 'block';
+    loadingScreen.style.display = 'none';
+    mainContent.style.display = 'block';
 });
